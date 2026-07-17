@@ -1,0 +1,299 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background: #f5f5f5;
+  color: #222;
+  line-height: 1.8;
+}
+
+header {
+  background: #111;
+  padding: 20px 40px;
+}
+
+.contenedor-menu {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.contenedor-logo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.logo {
+  color: #ffb000;
+}
+
+.img-logo {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+}
+
+.opciones-menu a {
+  color: white;
+  text-decoration: none;
+  margin: 0 10px;
+  font-weight: bold;
+}
+
+.opciones-menu a:hover {
+  color: #ffb000;
+}
+
+.btn-principal,
+.btn {
+  background: #ffb000;
+  color: black;
+  padding: 12px 20px;
+  border-radius: 8px;
+  border: none;
+  font-weight: bold;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.btn-principal:hover,
+.btn:hover {
+  background: #e69c00;
+}
+
+.section-inicio {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 40px;
+  padding: 70px 40px;
+  background: #111;
+  color: white;
+}
+
+.contenido-inicio {
+  width: 50%;
+}
+
+.contenido-inicio h1 {
+  font-size: 40px;
+  margin-bottom: 20px;
+}
+
+.img-inicio {
+  width: 400px;
+  border-radius: 15px;
+}
+
+.section-menu {
+  padding: 50px;
+  text-align: center;
+}
+
+.contenedor-menu-productos {
+  display: flex;
+  justify-content: center;
+  gap: 25px;
+  flex-wrap: wrap;
+}
+
+.tarjeta-producto {
+  background: white;
+  width: 300px;
+  padding: 20px;
+  border-radius: 15px;
+}
+
+.img-producto {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+.tarjeta-producto h3 {
+  margin: 15px 0;
+}
+
+.tarjeta-producto h4 {
+  color: #d35400;
+}
+
+.promo {
+  background: #111;
+  padding: 50px;
+}
+
+.contenedor-promociones {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 25px;
+}
+
+.promo-1,
+.promo-2 {
+  background: white;
+  padding: 20px;
+  border-radius: 15px;
+}
+
+.promo-1 img,
+.promo-2 img {
+  width: 100%;
+  height: 220px;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+.promo ul {
+  margin: 15px;
+}
+
+#nosotros {
+  padding: 50px;
+  text-align: center;
+}
+
+.nosotros {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.nosotros p {
+  width: 70%;
+}
+
+.benefits {
+  margin-top: 30px;
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.tarjeta-beneficio {
+  background: #fff3cd;
+  padding: 20px;
+  border-radius: 10px;
+  margin-bottom: 15px;
+}
+
+.companias {
+  background: #ffe9a8;
+  padding: 50px;
+}
+
+.two {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#contacto {
+  padding: 50px;
+}
+
+.titulo-contacto {
+  text-align: center;
+}
+
+.contact-grid {
+  display: flex;
+  gap: 30px;
+}
+
+.contact-grid div,
+.contact-grid form {
+  width: 50%;
+}
+
+form {
+  background: white;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+input,
+select {
+  width: 100%;
+  padding: 12px;
+  margin-bottom: 15px;
+}
+
+form button {
+  width: 100%;
+  background: #ffb000;
+  padding: 12px;
+  border: none;
+  border-radius: 8px;
+  font-weight: bold;
+}
+
+form button:hover {
+  background: #e69c00;
+}
+
+footer {
+  background: #111;
+  color: white;
+  text-align: center;
+  padding: 30px;
+}
+
+footer h2 {
+  color: #ffb000;
+}
+
+footer .opciones-menu {
+  margin: 20px;
+}
+
+footer .opciones-menu a {
+  color: white;
+  text-decoration: none;
+  margin: 10px;
+}
+
+@media (max-width: 768px) {
+  .contenedor-menu {
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  .section-inicio {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .contenido-inicio {
+    width: 100%;
+  }
+
+  .img-inicio {
+    width: 100%;
+  }
+
+  .contenedor-promociones {
+    grid-template-columns: 1fr;
+  }
+
+  .two,
+  .contact-grid {
+    flex-direction: column;
+  }
+
+  .contact-grid div,
+  .contact-grid form {
+    width: 100%;
+  }
+
+  footer .opciones-menu {
+    display: flex;
+    flex-direction: column;
+  }
+}
