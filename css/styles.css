@@ -137,7 +137,11 @@ header {
   grid-template-columns: repeat(2, 1fr);
   gap: 25px;
 }
-
+.h2-promociones {
+  color: white;
+  text-align: center;
+  margin-bottom: 30px;
+}
 .promo-1,
 .promo-2 {
   background: white;
